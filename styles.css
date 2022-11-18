@@ -1,0 +1,318 @@
+@font-face {
+	font-family: Jost;
+	font-style: normal;
+	font-weight: 400;
+	src: url('./fonts/Jost-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: Jost;
+	font-style: normal;
+	font-weight: 600;
+	src: url('./fonts/Jost-SemiBold.ttf') format('truetype');
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	font-family: Jost, sans-serif;
+}
+
+header {
+	background-color: #E4ECEE;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+}
+
+footer {
+	padding: 30px 0;
+}
+
+.container {
+	max-width: 1320px;
+	margin: 0 auto;
+}
+
+.logo-container, .logo-container img {
+	width: 60px;
+	height: 60px;
+}
+
+.menu-block {
+	display: flex;
+	margin-left: auto;
+}
+
+.main-menu {
+	display: flex;
+	padding-left: 0;
+	list-style: none;
+}
+
+a.nav-item-link {
+	display: block;
+	padding: 35px 20px 33px 20px;
+	color: rgb(31, 31, 31);
+	font-size: 1rem;
+	line-height: 1.5;
+	letter-spacing: -0.4px;
+	text-decoration: none;
+}
+
+.header-btn {
+	display: flex;
+}
+
+.download-btn {
+	display: flex;
+	height: 40px;
+	margin-left: 15px;
+	padding: 15px;
+	background-color: #1f1f1f;
+	border-radius: 3px;
+	color: #fff;
+	font-size: 1rem;
+	line-height: 10px;
+	letter-spacing: -0.4px;
+	text-decoration: none;
+}
+
+.banner-section {
+	background-color: #E4ECEE;
+}
+
+.row {
+	display: grid;
+	padding: 25px 24px 0 24px;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.banner img {
+	max-width: 100%;
+	max-height: 550px;
+}
+
+.column-offset {
+	margin-left: 8%;
+}
+
+.content {
+	padding-top: 75px;
+}
+
+.content h1 {
+	font-size: 70px;
+	line-height: 72px;
+}
+
+.content p {
+	margin: 25px 0px 35px 0px;
+	color: #222F3F;
+	font-size: 24px;
+	line-height: 36px;
+	letter-spacing: -0.3px;
+}
+
+.description-section {
+	padding-top: 75px;
+}
+
+.border-bottom {
+	border-bottom: 1px solid #dee2e6;
+}
+
+.section-image, .section-image img {
+	max-height: 400px;
+}
+
+.comments-section {
+	background-color: #E4ECEE;
+	padding-top: 50px;
+	padding-bottom: 32px;
+}
+
+.comments-section h2 {
+	font-size: 60px;
+	line-height: 64px;
+	text-align: center;
+}
+
+.one-column {
+	grid-template-columns: auto;
+}
+
+.columns-view {
+	grid-template-columns: repeat(3, 1fr);
+	gap: 32px;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	padding: 32px;
+	justify-content: space-between;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.card p {
+	color: #1F1F1F;
+	margin-bottom: 24px;
+	font-size: 18px;
+	line-height: 32px;
+	letter-spacing: -0.1px;
+}
+
+.card .user {
+	display: flex;
+}
+
+.user-image img {
+	width: 50px;
+	margin-right: 22px;
+	border-radius: 50%;
+}
+
+.user-name h5 {
+	color: #1F1F1F;
+	font-size: 17px;
+	line-height: 28px;
+	letter-spacing: -0.3px;
+}
+
+.join-section {
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+.app-buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.app-buttons a {
+	margin: 0 24px;
+}
+
+img.platform.large {
+	height: 70px;
+}
+
+img.platform.small {
+	height: 50px;
+}
+
+.copyright {
+	display: flex;
+	justify-content: flex-end;
+}
+
+@media all and (max-width: 1400px) {
+	.container {
+		max-width: 1140px;
+	}
+}
+
+@media all and (max-width: 1200px) {
+	.container {
+		max-width: 960px;
+	}
+
+	.content h1 {
+		font-size: 60px;
+		line-height: 70px;
+	}
+}
+
+@media all and (max-width: 992px) {
+	.container {
+		max-width: 720px;
+	}
+
+	.banner-section {
+		padding-bottom: 40px;
+	}
+
+	.banner-section .row, .description-section .row {
+		grid-template-columns: auto;
+	}
+
+	.column-offset {
+		margin-left: 0;
+	}
+
+	.content h1 {
+		font-size: 40px;
+		line-height: 46px;
+	}
+
+	.banner-section .app-buttons {
+		justify-content: flex-start;
+	}
+
+	.banner-section .app-buttons a:first-child {
+		margin-left: 0;
+	}
+
+	.description-section:nth-child(3) .row .column:first-child {
+		order: 2;
+	}
+
+	.section-image img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.comments-section .columns-view {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media all and (max-width: 768px) {
+	.container {
+		max-width: 540px;
+	}
+
+	.content h1 {
+		font-size: 34px;
+		line-height: 40px;
+	}
+}
+
+@media all and (max-width: 575px) {
+	.container {
+		max-width: 90vw;
+	}
+
+	.header-btn {
+		display: none;
+	}
+
+	.description-section .content {
+		padding-top: 0;
+	}
+
+	.section-image img {
+		max-width: 80vw;
+	}
+
+	.comments-section .columns-view {
+		grid-template-columns: auto;
+	}
+
+	.join-section .app-buttons a {
+		margin: 0 auto;
+	}
+
+	.app-buttons {
+		flex-direction: column;
+	}
+
+	.app-buttons a {
+		margin-left: 0;
+	}
+}
